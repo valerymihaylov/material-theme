@@ -1,1 +1,1 @@
-# material-theme
+# Material Theme by Valery Mihaylov
