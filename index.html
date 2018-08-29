@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Material Theme by Valery Mihaylov</title>
+  <title>Material Business HTML5 Template</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,7 +11,7 @@
   <link href="css/swiper.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/aos.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
   <script
           src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -20,7 +20,12 @@
 </head>
 <body>
 <div class="loader-wrapper">
+
+  <!-- Other loader -->
+
   <!--div class="spinner"></div-->
+
+  <!-- Commented out <div class="spinner"></div> and commented <div class="sk-cube-grid"> to get working -->
 
   <div class="sk-cube-grid">
     <div class="sk-cube sk-cube1"></div>
@@ -43,7 +48,7 @@
   <!--Change color of navabr -->
   <nav class="transparent z-depth-0 nav scrolling-navbar" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#Home" class="brand-logo">Logo</a>
+      <a data-aos="flip-right" data-aos-delay="1500" id="logo-container" href="#Home" class="brand-logo red-text accent-5">Materialise Theme</a>
       <ul class="right hide-on-med-and-down">
         <li><a class="page-scroll active" href="#Home">Home</a></li>
         <li><a class="page-scroll" href="#AboutUs">About Us</a></li>
@@ -69,13 +74,14 @@
 </div>
 
   <div class="home-section" id="Home">
+    <video autoplay muted loop id="myVideo">
+      <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4">
+    </video>
       <div class="container home">
-        <h1 class="header center white-text animated fadeInDown">Work.Together.</h1>
-        <!--div class="row center"-->
-          <h5 class="header center white-text col s12 light animated fadeInUp">We deliver business to all.</h5>
-        <!--/div-->
+        <h1 data-aos="zoom-in" data-aos-delay="1500" class="header center white-text animated fadeInDown">Work.Together.</h1>
+          <h5 data-aos="zoom-in" data-aos-delay="1600" class="header center white-text col s12 light animated fadeInUp">We deliver business to all.</h5>
         <div class="row center">
-          <a href="#AboutUs" id="download-button" class="btn-large waves-effect waves-light red accent-5 page-scroll ">Get Started</a>
+          <a data-aos="flip-up" data-aos-delay="1700" href="#AboutUs" id="download-button" class="btn-large waves-effect waves-light red accent-5 page-scroll ">Get Started</a>
         </div>
       </div>
     </div>
@@ -87,8 +93,8 @@
       <div class="row">
         <div class="col s12 m12 l8">
           <div class="icon-block">
-            <h2 class="left">About Us</h2>
-            <p class="left light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolores eveniet. Duis lobortis massa imperdiet quam. Sed turpis. Praesent ut ligula non mi varius sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum.</p>
+            <h2 data-aos="flip-up" class="left">About Us</h2>
+            <p data-aos="flip-down" class="left light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolores eveniet. Duis lobortis massa imperdiet quam. Sed turpis. Praesent ut ligula non mi varius sagittis. Etiam sollicitudin, ipsum eu pulvinar rutrum.</p>
 
           </div>
         </div>
@@ -107,7 +113,7 @@
     <div class="section no-pad-bot pad-top">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light "><em class="centering">“Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.” </em></h5>
+          <h5 data-aos="fade-right" class="header col s12 light"><em class="centering">“Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.” </em></h5>
         </div>
       </div>
     </div>
@@ -120,10 +126,10 @@
     <div class="section pad-top" id="WhatWeDo">
       <div class="row">
         <div class="col s12 center">
-          <h2>What We Do</h2>
-          <h5 class="light margin-text-up">We create customized solutions for you & your business.</h5>
+          <h2 data-aos="flip-up">What We Do</h2>
+          <h5 data-aos="flip-down" class="light margin-text-up">We create customized solutions for you & your business.</h5>
           <div class="row">
-            <div class="col s12 m4">
+            <div data-aos="fade-up" data-aos-delay="300" class="col s12 m4">
               <div class="card margin-card-up white darken-1">
                 <div class="flex-center">
                   <div class="card-circle">
@@ -137,7 +143,7 @@
                 </div>
               </div>
             </div>
-            <div class="col s12 m4">
+            <div data-aos="flip-down" data-aos-delay="400" class="col s12 m4">
               <div class="card margin-card-up red accent-5 darken-1">
                 <div class="flex-center">
                   <div class="card-circle">
@@ -151,7 +157,7 @@
                 </div>
               </div>
             </div>
-            <div class="col s12 m4">
+            <div data-aos="flip-up" data-aos-delay="500" class="col s12 m4">
               <div class="card margin-card-up white darken-1">
                 <div class="flex-center">
                   <div class="card-circle">
@@ -198,7 +204,7 @@
             </div>
           </div>
           <!-- If we need pagination -->
-          <div class="swiper-pagination swiper-pagination-bullets"></div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
@@ -212,52 +218,52 @@
   <div class="section pad-top" id="Portfolio">
     <div class="row">
       <div class="col s12 center">
-        <h2>Portfolio</h2>
+        <h2 data-aos="flip-up">Portfolio</h2>
         <div align="center">
-          <button class="btn btn-default filter-button red accent-5" data-filter="all">All</button>
-          <button class="btn btn-default filter-button red accent-5" data-filter="art">Art</button>
-          <button class="btn btn-default filter-button red accent-5" data-filter="design">Design</button>
-          <button class="btn btn-default filter-button red accent-5" data-filter="development">Development</button>
+          <button class="btn btn-default filter-button red accent-5" data-aos="flip-down" data-aos-delay="300" data-filter="all">All</button>
+          <button class="btn btn-default filter-button red accent-5" data-aos="flip-down" data-aos-delay="500" data-filter="art">Art</button>
+          <button class="btn btn-default filter-button red accent-5" data-aos="flip-down" data-aos-delay="700" data-filter="design">Design</button>
+          <button class="btn btn-default filter-button red accent-5" data-aos="flip-down" data-aos-delay="900" data-filter="development">Development</button>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col s12 m4 l4 portfolio-filter filter development">
+      <div data-aos="fade-up" data-aos-delay="300" class="col s12 m4 l4 portfolio-filter filter development">
         <div class="card margin-card-up white darken-1">
           <div class="card-image">
             <img src="img/portfolio/1.jpg">
           </div>
         </div>
       </div>
-      <div class="col s12 m4 l4 portfolio-filter filter design">
+      <div data-aos="fade-down" data-aos-delay="400" class="col s12 m4 l4 portfolio-filter filter design">
         <div class="card margin-card-up white darken-1">
           <div class="card-image">
             <img src="img/portfolio/3.jpg">
           </div>
         </div>
       </div>
-      <div class="col s12 m4 l4 portfolio-filter filter art">
+      <div data-aos="fade-up" data-aos-delay="500" class="col s12 m4 l4 portfolio-filter filter art">
         <div class="card margin-card-up white darken-1">
           <div class="card-image">
             <img src="img/portfolio/2.jpg">
           </div>
         </div>
       </div>
-      <div class="col s12 m4 l4 portfolio-filter filter design">
+      <div data-aos="fade-down" data-aos-delay="600" class="col s12 m4 l4 portfolio-filter filter design">
         <div class="card margin-card-up white darken-1">
           <div class="card-image">
             <img src="img/portfolio/2.jpg">
           </div>
         </div>
       </div>
-      <div class="col s12 m4 l4 portfolio-filter filter art">
+      <div data-aos="fade-up" data-aos-delay="700" class="col s12 m4 l4 portfolio-filter filter art">
         <div class="card margin-card-up white darken-1">
           <div class="card-image">
             <img src="img/portfolio/1.jpg">
           </div>
         </div>
       </div>
-      <div class="col s12 m4 l4 portfolio-filter filter development">
+      <div data-aos="fade-down" data-aos-delay="800" class="col s12 m4 l4 portfolio-filter filter development">
         <div class="card margin-card-up white darken-1">
           <div class="card-image">
             <img src="img/portfolio/3.jpg">
@@ -274,7 +280,7 @@
 <div class="container-fluid">
   <div class="row partners">
     <!-- Slider main container -->
-    <div class="swiper-container">
+    <div data-aos="fade-zoom-out" class="swiper-container">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
@@ -295,21 +301,21 @@
   <div class="section pad-top" id="Team">
     <div class="row">
       <div class="col s12 center">
-        <h2>Team</h2>
-        <h5 class="light margin-text-up">Meet our incredible team members</h5>
+        <h2 data-aos="flip-up">Team</h2>
+        <h5 data-aos="flip-down" class="light margin-text-up">Meet our incredible team members</h5>
       </div>
-      <div class=" col s12 m6 l3">
+      <div data-aos="fade" data-aos-delay="300" class=" col s12 m6 l3">
         <div class="avatar margin-card-up">
           <img src="img/team/member_1.jpg">
         </div>
-        <h5 class="center-align">Jenifer Deynah</h5>
+        <h5  class="center-align">Jenifer Deynah</h5>
         <h6 class="center-align blue-text text-accent-3">Adwords Expert</h6>
         <p class="center-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p>
         <a class="social_icons" href="#"><i class="fa fa-facebook blue-text text-darken-4" aria-hidden="true"></i></a>
         <a class="social_icons" href="#"><i class="fa fa-linkedin blue-text" aria-hidden="true"></i></a>
         <a  class="social_icons" href="#"><i class="fa fa-instagram pink-text text-accent-2" aria-hidden="true"></i></a>
       </div>
-      <div class="col s12 m6 l3">
+      <div data-aos="fade" data-aos-delay="500" class="col s12 m6 l3">
         <div class="avatar margin-card-up">
           <img src="img/team/member_2.jpg">
         </div>
@@ -320,7 +326,7 @@
         <a class="social_icons" href="#"><i class="fa fa-github black-text" aria-hidden="true"></i></a>
         <a  class="social_icons" href="#"><i class="fa fa-instagram pink-text text-accent-2" aria-hidden="true"></i></a>
       </div>
-      <div class="col s12 m6 l3">
+      <div data-aos="fade" data-aos-delay="700" class="col s12 m6 l3">
         <div class="avatar margin-card-up">
           <img src="img/team/member_3.jpg">
         </div>
@@ -331,7 +337,7 @@
         <a class="social_icons" href="#"><i class="fa fa-dribbble pink-text" aria-hidden="true"></i></a>
         <a  class="social_icons" href="#"><i class="fa fa-instagram pink-text text-accent-2" aria-hidden="true"></i></a>
       </div>
-      <div class="col s12 m6 l3">
+      <div data-aos="fade" data-aos-delay="900" class="col s12 m6 l3">
         <div class="avatar margin-card-up">
           <img src="img/team/member_4.jpg">
         </div>
@@ -357,7 +363,7 @@
           <p class="newsletter">Newsletter</p>
           </div>
           <div class="col s12 m12 l6">
-          <input type="text" id="newsletter">
+          <input type="text" placeholder="Subcribe for our newsletter" id="newsletter">
           </div>
           <div class="col s12 m12 l3">
           <a class="waves-effect waves-light btn red accent-5">Subscribe</a>
@@ -376,12 +382,12 @@
 
     <div class="row">
       <div class="col s12 center">
-        <h2>Our Prices</h2>
-        <h5 class="light margin-text-up">Choose from our pricing plans</h5>
+        <h2 data-aos="flip-up">Our Prices</h2>
+        <h5 data-aos="flip-down" class="light margin-text-up">Choose from our pricing plans</h5>
         <div class="row">
-          <div class="col s12 m4">
+          <div data-aos="fade-up" data-aos-delay="300" class="col s12 m4">
             <div class="card margin-card-up white darken-1">
-              <div class="card-header-price blue">
+              <div class="card-header-price red accent-5">
               <div class="flex-center white-text package-name">
                 <span class="card-title"><span>Basic</span></span>
               </div>
@@ -407,13 +413,13 @@
                     <p><i class="fa fa-times deep-orange-text accent-3"></i>User Management</p>
                   </li>
                 </ul>
-                <a class="waves-effect waves-light btn blue darken-2" id="basic">buy now</a>
+                <a class="waves-effect waves-light btn red accent-5 darken-2" id="basic">buy now</a>
               </div>
             </div>
           </div>
-          <div class="col s12 m4">
+          <div data-aos="fade-down" data-aos-delay="400" class="col s12 m4">
             <div class="card margin-card-up white darken-1">
-              <div class="card-header-price indigo">
+              <div class="card-header-price red">
                 <div class="flex-center white-text package-name">
                   <span class="card-title"><span>Pro</span></span>
                 </div>
@@ -439,13 +445,13 @@
                     <p><i class="fa fa-times deep-orange-text accent-3"></i>User Management</p>
                   </li>
                 </ul>
-                <a class="waves-effect waves-light btn indigo darken-2" id="pro">buy now</a>
+                <a class="waves-effect waves-light btn red darken-2" id="pro">buy now</a>
               </div>
             </div>
           </div>
-          <div class="col s12 m4">
+          <div data-aos="fade-up" data-aos-delay="500" class="col s12 m4">
             <div class="card margin-card-up white darken-1">
-              <div class="card-header-price deep-purple">
+              <div class="card-header-price pink darken-1">
                 <div class="flex-center white-text package-name">
                   <span class="card-title"><span>Enterprise</span></span>
                 </div>
@@ -471,7 +477,7 @@
                     <p><i class="fa fa-check light-green-text accent-3"></i>User Management</p>
                   </li>
                 </ul>
-                <a class="waves-effect waves-light btn deep-purple darken-2" id="enterprise">buy now</a>
+                <a class="waves-effect waves-light btn pink darken-1" id="enterprise">buy now</a>
               </div>
             </div>
           </div>
@@ -490,37 +496,37 @@
       <div class="section pad-top" id="Contact">
         <div class="row">
           <div class="col l12 m12 s12 center">
-            <h2 class="black-text">Get in Touch</h2>
-            <h5 class="black-text light margin-text-up">If you need help just write us</h5>
+            <h2 data-aos="flip-up" class="black-text">Get in Touch</h2>
+            <h5 data-aos="flip-down" class="black-text light margin-text-up">If you need help just write us</h5>
           </div>
         </div>
       <div class="row">
           <div id="map"></div>
             <div class="contacts col l5 m12 s12">
-              <div class="card margin-card-up white">
+              <div data-aos="fade-right" class="card margin-card-up white">
                 <div class="card-content black-text">
                   <span class="card-title flex-center"><strong>Get in Touch</strong></span>
                   <div class="flex-center">
                     <form class="contact">
                       <div class="row">
-                        <div class="input-field">
+                        <div data-aos="flip-right" data-aos-delay="200" class="input-field">
                           <input id="name" type="text">
                           <label for="name">Name</label>
                         </div>
                       </div>
                       <div class="row">
-                        <div class="input-field">
+                        <div data-aos="flip-right" data-aos-delay="300" class="input-field">
                           <input id="email" type="text">
-                          <label for="email">e-mail</label>
+                          <label for="email">E-mail</label>
                         </div>
                       </div>
                       <div class="row">
-                        <div class="input-field">
+                        <div data-aos="flip-right" data-aos-delay="400" class="input-field">
                           <textarea class="materialize-textarea" id="textarea" type="text"></textarea>
                           <label for="textarea">Message</label>
                         </div>
                       </div>
-                      <a class="waves-effect waves-light btn red accent-5">Send</a>
+                      <a data-aos="flip-right" data-aos-delay="500" class="waves-effect waves-light btn red accent-5">Send</a>
                     </form>
                   </div>
                 </div>
@@ -546,7 +552,7 @@
     </div>
     <div class="footer-copyright grey accent-2">
       <div class="container">
-        <p class="center-align">Made by <a class="white-text text-lighten-3" href="#">Valery Mihaylov</a></p>
+        <p class="center-align">Made with <i class="fa fa-heart red-text"></i> by <a class="white-text text-lighten-3 web-brand" href="http://infinitylabs.bg">InfinityLabs</a></p>
       </div>
     </div>
   </footer>
@@ -557,9 +563,16 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGhd0iomIri518K6IjZzlZhaWQgtR39bo&callback=initMap">
 </script>
   <script src="js/materialize.js"></script>
-  <script src="js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/filter.js"></script>
+  <script src="js/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration:1000,
+    });
+</script>
   </body>
 </html>
