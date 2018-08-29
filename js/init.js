@@ -28,7 +28,7 @@ $(document).ready(function () {
     /* Preloader Trigger*/
     setTimeout(function () {
         $('body').addClass('loaded');
-    },3000)
+    },1000)
 });
 
 
