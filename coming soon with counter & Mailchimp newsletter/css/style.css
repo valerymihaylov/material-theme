@@ -1,0 +1,372 @@
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+
+p {
+    line-height: 2rem;
+}
+
+.counter {
+    position: relative;
+    top: 10%;
+}
+
+.counter-section{
+    /* The image used */
+    background-image: url("../img/fabian_irsasa_.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.counter-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #1010108c;
+    box-shadow: 0 1px 14px 0 rgb(72, 72, 72);
+
+
+    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    opacity: .6;
+}
+
+.header {
+    padding: 15px 0;
+    font-family: 'Monoton', cursive;
+}
+
+h3.header {
+    margin-top: 5%;
+}
+
+p.brand-logo{
+    margin: 0;
+    font-family: 'Monoton', cursive;
+    font-size: 5rem;
+}
+
+.section#Counter {
+    padding-top: 12rem;
+    padding-bottom: 0;
+}
+
+/* Counter styles */
+
+#clockdiv{
+    font-family: 'Monoton', cursive;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 5rem;
+    margin: 5% 0 5% 0;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 25px;
+    display: inline-block;
+    box-shadow: 2px 0px 0 #ff5252, 3px -4px 0 #ff5252, 6px -4px 0 #ff5252;
+    border: 2px solid #ff5252;
+}
+
+/* Enquiries styles */
+
+.enquiries{
+    font-family: 'Monoton', cursive;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: #FFFFFF;
+}
+
+/* Mailchimp form styles */
+
+#mc_embed_signup{
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+    width:50%;
+    margin: 8% auto;
+}
+
+.label-for-mce{
+    color: #FFFFFF;
+    font-family: 'Monoton', cursive;
+    font-size: 2rem;
+}
+
+input[type=email]{
+    background: rgba(255, 255, 255, 0.07);
+    border-bottom: 0;
+    border-radius: 8px;
+    padding: 6px 18px;
+    font-family: 'Monoton', cursive;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* Media Query*/
+
+@media only screen and (max-width : 1280px) {
+
+    .counter{
+        top: 10%;
+    }
+
+    p.brand-logo{
+        font-size: 5rem;
+    }
+
+    h3.header {
+        font-size: 2rem;
+        margin-top: 5%;
+    }
+
+    #clockdiv{
+        font-size: 3rem;
+        margin: 5% 0 5% 0;
+    }
+
+    .label-for-mce{
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-bottom: 3%;
+    }
+
+    #mc_embed_signup{
+        width: 100%;
+    }
+}
+
+/* Ipad Pro */
+
+@media only screen and (max-width : 1024px) {
+
+    .counter{
+        top: 10%;
+    }
+
+    p.brand-logo{
+        font-size: 5rem;
+    }
+
+    h3.header {
+        font-size: 3rem;
+        margin-top: 5%;
+    }
+
+    #clockdiv{
+        font-size: 5rem;
+        margin: 10% 0 10% 0;
+    }
+
+    .label-for-mce{
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: 10%;
+    }
+
+    #mc_embed_signup{
+        width: 100%;
+    }
+}
+
+/* Ipad Mini */
+
+@media only screen and (max-width : 768px) {
+
+    .counter{
+        top: 10%;
+    }
+
+    p.brand-logo{
+        font-size: 5rem;
+    }
+
+    h3.header {
+        font-size: 1.7rem;
+    }
+
+    #clockdiv{
+        font-size: 2rem;
+        margin: 10% 0 10% 0;
+    }
+
+    #clockdiv > div{
+        padding: 5px;
+    }
+
+    .label-for-mce{
+        font-size: 1.7rem;
+        margin-bottom: 10%;
+    }
+
+    #mc_embed_signup{
+        width: 95%;
+    }
+}
+
+/* Pixel 2, 2XL & Iphone 6/7/8 Plus */
+
+@media only screen and (max-width : 414px) {
+
+    .counter{
+        top: 13%;
+    }
+
+    p.brand-logo{
+        font-size: 4rem;
+    }
+
+    h3.header {
+        font-size: 1.7rem;
+    }
+
+    #clockdiv{
+        font-size: 1rem;
+        margin: 15% 0 5% 0;
+    }
+
+    #clockdiv > div{
+        padding: 5px;
+    }
+
+    .label-for-mce{
+        font-size: 1.7rem;
+        margin-bottom: 2%;
+    }
+
+    #mc_embed_signup{
+        width: 90%;
+        float: left;
+    }
+}
+
+/* Iphone 6/7/8/X & Note 8 , S8, S8+ */
+
+@media only screen and (max-width : 375px) {
+
+    .counter{
+        top: 10%;
+    }
+
+    p.brand-logo{
+        font-size: 4rem;
+    }
+
+    h3.header {
+        font-size: 1.7rem;
+    }
+
+    #clockdiv{
+        font-size: 1rem;
+        margin: 10% 0 5% 0;
+    }
+
+    #clockdiv > div{
+        padding: 5px;
+    }
+
+    .label-for-mce{
+        font-size: 1.7rem;
+        margin-bottom: 0;
+    }
+
+    #mc_embed_signup{
+        width: 90%;
+        float: left;
+    }
+}
+
+/* Nexus 5 - Old Android devices */
+
+@media only screen and (max-width : 360px) {
+
+    .counter{
+        top: 5%;
+    }
+
+    p.brand-logo{
+        font-size: 4rem;
+    }
+
+    h3.header {
+        font-size: 1.7rem;
+    }
+
+    #clockdiv{
+        font-size: 1rem;
+        margin: 5% 0 5% 0;
+    }
+
+    #clockdiv > div{
+        padding: 5px;
+    }
+
+    .label-for-mce{
+        font-size: 1.7rem;
+        margin-bottom: 0;
+    }
+
+    #mc_embed_signup{
+        width: 90%;
+        float: left;
+    }
+}
+
+
+
+/* Iphone 4 */
+
+@media only screen and (max-width : 320px) {
+
+    .counter{
+        top: 3%;
+    }
+
+    p.brand-logo{
+        font-size: 2rem;
+    }
+
+    h3.header {
+        font-size: 1rem;
+    }
+
+    #clockdiv{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    #clockdiv > div{
+        padding: 5px;
+    }
+
+    .label-for-mce{
+        font-size: 1rem;
+        margin-bottom: 1%;
+    }
+
+    #mc_embed_signup{
+        width: 90%;
+        float: left;
+        margin: 0 0 0 0;
+    }
+}

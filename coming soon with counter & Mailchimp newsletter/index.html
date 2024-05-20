@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>BMT - Business Material Theme</title>
+
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+
+    <!-- Fonts -->
+
+    <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="counter-section" id="Counter">
+    <div class="container counter">
+        <div class="row">
+            <p data-aos="flip-right" class="brand-logo red-text accent-5">BMT</p>
+            <h3 data-aos="zoom-in" data-aos-delay="400" class="header center white-text col s12 light animated fadeInUp">Under Construction.</h3>
+            <div class="counter"  id="clockdiv" data-aos="zoom-in" data-aos-delay="200"></div>
+            <p class="label-for-mce col s12" data-aos="zoom-in" data-aos-delay="800">Join the waiting list for our beta.</br> We keep you posted.</p>
+        </div>
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+            <!-- Replace "action" with yours from mailchimp account. If you have problems contact us at support@infinitylabs.bg -->
+            <form action="https://infinitylabs.us16.list-manage.com/subscribe/post?u=67c7a3cb11f54a01b306e3111&amp;id=5985d90aa0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate col s12" target="_blank" novalidate>
+                <div class="row">
+                    <div id="mc_embed_signup_scroll" class="col l6 m12 s12">
+                        <input data-aos="zoom-in" data-aos-delay="1200" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Type your email ..." required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_67c7a3cb11f54a01b306e3111_5985d90aa0" tabindex="-1" value="">
+                        </div>
+                    </div>
+                    <div class="col l6 m12 s12" data-aos="zoom-in" data-aos-delay="1600">
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-large waves-effect waves-light red accent-5">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--End mc_embed_signup-->
+    </div>
+</div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script type="text/javascript">
+        $('#clockdiv').countdown('2019/01/10', function(event) {
+        var $this = $(this).html(event.strftime(''
+            + '<div><span class="days">%D</span> </div> '
+            + '<div><span class="hours">%H</span> </div> '
+            + '<div><span class="minutes">%M</span> </div> '
+            + '<div><span class="seconds">%S</span></div> '));
+    });
+</script>
+<script>
+    AOS.init({
+        duration:1000,
+    });
+</script>
+</body>
+</html>

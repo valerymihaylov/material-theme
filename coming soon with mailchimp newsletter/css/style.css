@@ -1,0 +1,176 @@
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+
+p {
+    line-height: 2rem;
+}
+
+.newsletter {
+    position: relative;
+    top: 10%;
+}
+
+.newsletter-section{
+    /* The image used */
+    background-image: url("../img/christopher-burns-368617-unsplash.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.newsletter-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #1010108c;
+    box-shadow: 0 1px 14px 0 rgb(72, 72, 72);
+
+
+    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    opacity: .6;
+}
+
+.header {
+    padding: 15px 0;
+    font-family: 'Monoton', cursive;
+    margin-top: 10%;
+}
+
+h1.header {
+    margin: 0;
+}
+
+p.brand-logo{
+    margin: 0;
+    font-family: 'Monoton', cursive;
+    font-size: 5rem;
+}
+
+.section#Newsletter {
+    padding-top: 12rem;
+    padding-bottom: 0;
+}
+
+/* Mailchimp form styles */
+
+#mc_embed_signup{
+    clear:left;
+    font:14px Helvetica,Arial,sans-serif;
+    width:50%;
+    margin: 8% auto;
+}
+
+.label-for-mce{
+    color: #FFFFFF;
+    font-family: 'Monoton', cursive;
+    font-size: 2rem;
+    margin-top: 8%;
+}
+
+input[type=email]{
+    background: rgba(255, 255, 255, 0.07);
+    border-bottom: 0;
+    border-radius: 8px;
+    padding: 6px 18px;
+    font-family: 'Monoton', cursive;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* Media Query*/
+
+@media only screen and (max-width : 1440px) {
+
+    .newsletter{
+        top: 20%;
+    }
+
+    h3.header {
+        font-size: 2rem;
+    }
+
+    #mc_embed_signup{
+        width: 100%;
+    }
+
+    .label-for-mce{
+        font-size: 1.9rem;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+
+    .newsletter{
+        top: 20%;
+    }
+
+    h3.header {
+        font-size: 2rem;
+    }
+
+    #mc_embed_signup{
+        width: 100%;
+    }
+
+    .label-for-mce{
+        font-size: 1.9rem;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+
+    .newsletter{
+        top: 15%;
+    }
+
+    h3.header {
+        font-size: 2rem;
+    }
+
+    #mc_embed_signup{
+        width: 80%;
+    }
+
+    .label-for-mce{
+        font-size: 1.9rem;
+        margin-bottom: 0;
+    }
+}
+
+/* Iphone */
+
+@media only screen and (max-width : 320px) {
+
+    .newsletter{
+        top: 5%;
+    }
+
+    h3.header {
+        font-size: 2rem;
+    }
+
+    #mc_embed_signup{
+        width: 100%;
+    }
+
+    .label-for-mce{
+        font-size: 1.9rem;
+        margin: 0;
+    }
+}
